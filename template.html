@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- Copyright (C) 2024 Warren Usui, MIT License -->
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+th, td {
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+h2 {
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid white;
+  border-collapse: collapse;
+  background-color: #88FF88;
+}
+</style>
+</head>
+<body>
+<div style="text-align: center;">
+<h2>{{ hmsg }}</h2>
+<BR><BR><BR><BR>
+{% for item in htmltables %}
+  <h3>{{ item.headerv }}</h3>
+  <BR>
+  {{ item.tablev }}
+  <BR><BR>
+{% endfor %}
+</div>
+</body>
+</html>
